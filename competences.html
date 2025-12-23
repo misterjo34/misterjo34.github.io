@@ -1,105 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Compétences – Portfolio BTS SIO SISR</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compétences - Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container">
-      <div class="brand">
-        <div class="logo">SISR</div>
-        <div>
-          <div class="brand-title">Compétences</div>
-          <div class="brand-subtitle">Compétences ↔ preuves ↔ projets</div>
-        </div>
-      </div>
 
-      <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a class="active" href="competences.html">Compétences</a>
-        <a href="veille.html">Veille</a>
-      </nav>
-    </div>
-  </header>
+<header class="topbar">
+  <div class="container navwrap">
+    <a class="brand" href="index.html">
+      <span class="logo" aria-hidden="true"></span>
+      <span>Portfolio BTS SIO</span>
+    </a>
 
-  <main class="container">
-    <section class="card">
-      <h1>Table de correspondance (à compléter)</h1>
-      <p class="muted">
-        Mets ici tes compétences du référentiel et lie-les à des preuves (captures, procédures, configs, scripts).
-        Le but : montrer <strong>ce que tu sais faire</strong> + <strong>preuve</strong>.
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a class="active" href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html">Veille</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="card pad">
+      <span class="kicker">🧠 Compétences</span>
+      <h1>Mes compétences (BTS SIO)</h1>
+      <p>
+        Cette page regroupe mes compétences techniques et professionnelles, avec des exemples concrets
+        issus de mes projets et de mes expériences.
       </p>
-      <div class="note">
-        Astuce : ajoute un lien vers le projet + un lien vers une image ou un PDF de preuve.
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid2">
+      <div class="card pad">
+        <h2>Technologies</h2>
+        <div class="pillrow">
+          <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+          <span class="pill">[PHP]</span><span class="pill">[Java]</span><span class="pill">[Python]</span>
+          <span class="pill">[SQL]</span><span class="pill">Git</span><span class="pill">GitHub</span>
+        </div>
+
+        <ul class="list">
+          <li>Développement web : pages, formulaires, responsive.</li>
+          <li>Back-end / scripts : [API / CRUD / automatisations].</li>
+          <li>Base de données : [modélisation, requêtes, jointures].</li>
+        </ul>
       </div>
-    </section>
 
-    <section class="card">
-      <h2>Exemples (modèle)</h2>
+      <div class="card pad">
+        <h2>Outils & méthodes</h2>
+        <div class="pillrow">
+          <span class="pill">VS Code</span>
+          <span class="pill">[Docker]</span>
+          <span class="pill">[Linux]</span>
+          <span class="pill">[Windows Server]</span>
+          <span class="pill">[VirtualBox]</span>
+        </div>
 
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Compétence</th>
-              <th>Situation / Projet</th>
-              <th>Preuves</th>
-              <th>Outils / Technos</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Administrer des systèmes</td>
-              <td><a href="projets.html">Projet 1 — Active Directory</a></td>
-              <td>
-                <a href="images/ad-ou.png">Capture OU</a>,
-                <a href="images/gpo.png">Capture GPO</a>
-              </td>
-              <td>Windows Server, AD DS, DNS, GPO</td>
-            </tr>
-            <tr>
-              <td>Administrer des réseaux</td>
-              <td><a href="projets.html">Projet 2 — VLAN</a></td>
-              <td>
-                <a href="images/schema-reseau.png">Schéma</a>,
-                <a href="images/vlan-config.png">Config</a>
-              </td>
-              <td>VLAN, routage, ACL</td>
-            </tr>
-            <tr>
-              <td>Assurer la sécurité</td>
-              <td>Durcissement + droits</td>
-              <td>Procédure (PDF), captures de règles</td>
-              <td>NTFS, GPO, firewall, MFA (si applicable)</td>
-            </tr>
-            <tr>
-              <td>Documentation & support</td>
-              <td>Procédures utilisateurs / dépannage</td>
-              <td>Guide PDF / captures</td>
-              <td>GLPI (si utilisé), procédures</td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="list">
+          <li>Gestion de version Git : branches, commits, README.</li>
+          <li>Documentation : procédures, schémas, tickets.</li>
+          <li>Travail en projet : organisation, priorités, tests.</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Preuves (conseils)</h2>
-      <ul class="checklist">
-        <li>1 preuve = 1 phrase d’explication (ce que ça prouve)</li>
-        <li>Floute données sensibles (nom entreprise, IP publiques, identifiants)</li>
-        <li>Nomme tes fichiers proprement : <code>gpo_verrouillage.png</code>, <code>schema_vlan.pdf</code></li>
-      </ul>
-    </section>
+  <section class="section">
+    <div class="grid3">
+      <div class="card pad">
+        <div class="cardTitle">
+          <h3>Support & services</h3>
+          <span class="meta">Exemples</span>
+        </div>
+        <ul class="list">
+          <li>Installation / configuration : [ex: poste, VM, appli].</li>
+          <li>Assistance utilisateur : diagnostic, résolution.</li>
+          <li>Documentation : guide, procédures.</li>
+        </ul>
+        <p class="meta">Projet lié : <a class="link" href="projets.html">[Nom du projet]</a></p>
+      </div>
 
-    <footer class="footer">
-      <a class="muted" href="index.html">← Retour accueil</a>
-    </footer>
-  </main>
+      <div class="card pad">
+        <div class="cardTitle">
+          <h3>Développement / Admin</h3>
+          <span class="meta">Exemples</span>
+        </div>
+        <ul class="list">
+          <li>Développement : CRUD, formulaires, validations.</li>
+          <li>BDD : tables, relations, requêtes.</li>
+          <li>Déploiement : [hébergement / GitHub Pages / serveur].</li>
+        </ul>
+        <p class="meta">Projet lié : <a class="link" href="projets.html">[Nom du projet]</a></p>
+      </div>
+
+      <div class="card pad">
+        <div class="cardTitle">
+          <h3>Cybersécurité</h3>
+          <span class="meta">Bonnes pratiques</span>
+        </div>
+        <ul class="list">
+          <li>Mots de passe, MFA, droits d’accès.</li>
+          <li>Sauvegardes / mises à jour / durcissement.</li>
+          <li>Vigilance : phishing, logs, audits basiques.</li>
+        </ul>
+        <p class="meta">Veille liée : <a class="link" href="veille.html">Voir la veille</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footerRow">
+    <div>© <span id="year"></span> — [Prénom Nom]</div>
+    <div>
+      <a href="mailto:[tonmail@exemple.com]">Email</a> •
+      <a href="https://github.com/[tonPseudo]" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
