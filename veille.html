@@ -1,91 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Veille – Portfolio BTS SIO SISR</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veille - Portfolio BTS SIO</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container">
-      <div class="brand">
-        <div class="logo">SISR</div>
-        <div>
-          <div class="brand-title">Veille technologique</div>
-          <div class="brand-subtitle">Sources • synthèses • impacts SISR</div>
-        </div>
-      </div>
 
-      <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a href="competences.html">Compétences</a>
-        <a class="active" href="veille.html">Veille</a>
-      </nav>
-    </div>
-  </header>
+<header class="topbar">
+  <div class="container navwrap">
+    <a class="brand" href="index.html">
+      <span class="logo" aria-hidden="true"></span>
+      <span>Portfolio BTS SIO</span>
+    </a>
 
-  <main class="container">
-    <section class="card">
-      <h1>Veille technologique</h1>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a class="active" href="veille.html">Veille</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="card pad">
+      <span class="kicker">📰 Veille technologique</span>
+      <h1>Ma veille</h1>
       <p>
-        Sujet conseillé : <strong>cybersécurité</strong>, <strong>virtualisation</strong>, <strong>cloud</strong>,
-        <strong>ransomware</strong>, <strong>Zero Trust</strong>, <strong>Windows Server / Linux</strong>, etc.
+        Sujet principal : <strong>[ex: cybersécurité / IA / cloud / réseau]</strong>.  
+        Je collecte des sources fiables, je résume, et j’explique ce que j’en retiens pour ma pratique.
       </p>
-      <div class="grid2">
-        <div class="pill">
-          <strong>Mon sujet</strong><br />
-          <span class="muted">Ex : “Durcissement AD et protection contre les ransomwares”</span>
-        </div>
-        <div class="pill">
-          <strong>Outils de veille</strong><br />
-          <span class="muted">RSS / newsletters / blogs sécu / ANSSI / éditeurs</span>
-        </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid2">
+      <div class="card pad">
+        <h2>Sources suivies</h2>
+        <ul class="list">
+          <li>[Source 1] — [type: site / newsletter / chaîne]</li>
+          <li>[Source 2]</li>
+          <li>[Source 3]</li>
+        </ul>
+        <p class="meta">Astuce : 2–3 sources suffisent si tu es régulier.</p>
       </div>
-    </section>
 
-    <section class="card">
-      <h2>Sources (exemples)</h2>
-      <ul>
-        <li>ANSSI (alertes, recommandations)</li>
-        <li>Éditeurs : Microsoft, Cisco, VMware/Proxmox, etc.</li>
-        <li>Sites sécu / CERT / bulletins</li>
-      </ul>
-      <div class="note">
-        Mets des liens vers les articles (et une mini synthèse). Évite le copié-collé.
+      <div class="card pad">
+        <h2>Méthode</h2>
+        <ul class="list">
+          <li>Je sélectionne un article / actu par semaine.</li>
+          <li>Je résume en 5–8 lignes (pas du copier-coller).</li>
+          <li>Je note l’impact : sécurité, performance, bonnes pratiques.</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Articles / synthèses</h2>
+  <section class="section">
+    <div class="grid3">
 
-      <article class="veille-item">
-        <h3>Article 1 — Titre (à compléter)</h3>
-        <p class="muted">Date : JJ/MM/AAAA • Source : Nom du site</p>
-        <p><strong>Résumé :</strong> 5–8 lignes avec tes mots.</p>
-        <p><strong>Impact SISR :</strong> ce que ça change en entreprise (bonnes pratiques, risques, actions).</p>
+      <!-- ARTICLE 1 -->
+      <article class="card pad">
+        <div class="cardTitle">
+          <h3>[Titre de l’article]</h3>
+          <span class="meta">[JJ/MM/AAAA]</span>
+        </div>
+        <p><strong>Source :</strong> <a class="link" href="[lien]" target="_blank" rel="noopener">[site]</a></p>
+        <p><strong>Résumé :</strong> [Ton résumé en 5–8 lignes.]</p>
+        <p class="meta"><strong>Ce que j’en retiens :</strong> [impact concret / bonnes pratiques].</p>
       </article>
 
-      <article class="veille-item">
-        <h3>Article 2 — Titre (à compléter)</h3>
-        <p class="muted">Date : JJ/MM/AAAA • Source : Nom du site</p>
-        <p><strong>Résumé :</strong> …</p>
-        <p><strong>Impact SISR :</strong> …</p>
+      <!-- ARTICLE 2 -->
+      <article class="card pad">
+        <div class="cardTitle">
+          <h3>[Titre de l’article]</h3>
+          <span class="meta">[JJ/MM/AAAA]</span>
+        </div>
+        <p><strong>Source :</strong> <a class="link" href="[lien]" target="_blank" rel="noopener">[site]</a></p>
+        <p><strong>Résumé :</strong> [Ton résumé.]</p>
+        <p class="meta"><strong>Ce que j’en retiens :</strong> [impact concret].</p>
       </article>
 
-      <article class="veille-item">
-        <h3>Article 3 — Titre (à compléter)</h3>
-        <p class="muted">Date : JJ/MM/AAAA • Source : Nom du site</p>
-        <p><strong>Résumé :</strong> …</p>
-        <p><strong>Impact SISR :</strong> …</p>
+      <!-- ARTICLE 3 -->
+      <article class="card pad">
+        <div class="cardTitle">
+          <h3>[Titre de l’article]</h3>
+          <span class="meta">[JJ/MM/AAAA]</span>
+        </div>
+        <p><strong>Source :</strong> <a class="link" href="[lien]" target="_blank" rel="noopener">[site]</a></p>
+        <p><strong>Résumé :</strong> [Ton résumé.]</p>
+        <p class="meta"><strong>Ce que j’en retiens :</strong> [impact concret].</p>
       </article>
-    </section>
 
-    <footer class="footer">
-      <a class="muted" href="index.html">← Retour accueil</a>
-    </footer>
-  </main>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footerRow">
+    <div>© <span id="year"></span> — [Prénom Nom]</div>
+    <div>
+      <a href="mailto:[tonmail@exemple.com]">Email</a> •
+      <a href="https://github.com/[tonPseudo]" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
