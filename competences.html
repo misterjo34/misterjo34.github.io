@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compétences – Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">SISR</div>
+        <div>
+          <div class="brand-title">Compétences</div>
+          <div class="brand-subtitle">Compétences ↔ preuves ↔ projets</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a class="active" href="competences.html">Compétences</a>
+        <a href="veille.html">Veille</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Table de correspondance (à compléter)</h1>
+      <p class="muted">
+        Mets ici tes compétences du référentiel et lie-les à des preuves (captures, procédures, configs, scripts).
+        Le but : montrer <strong>ce que tu sais faire</strong> + <strong>preuve</strong>.
+      </p>
+      <div class="note">
+        Astuce : ajoute un lien vers le projet + un lien vers une image ou un PDF de preuve.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Exemples (modèle)</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Compétence</th>
+              <th>Situation / Projet</th>
+              <th>Preuves</th>
+              <th>Outils / Technos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Administrer des systèmes</td>
+              <td><a href="projets.html">Projet 1 — Active Directory</a></td>
+              <td>
+                <a href="images/ad-ou.png">Capture OU</a>,
+                <a href="images/gpo.png">Capture GPO</a>
+              </td>
+              <td>Windows Server, AD DS, DNS, GPO</td>
+            </tr>
+            <tr>
+              <td>Administrer des réseaux</td>
+              <td><a href="projets.html">Projet 2 — VLAN</a></td>
+              <td>
+                <a href="images/schema-reseau.png">Schéma</a>,
+                <a href="images/vlan-config.png">Config</a>
+              </td>
+              <td>VLAN, routage, ACL</td>
+            </tr>
+            <tr>
+              <td>Assurer la sécurité</td>
+              <td>Durcissement + droits</td>
+              <td>Procédure (PDF), captures de règles</td>
+              <td>NTFS, GPO, firewall, MFA (si applicable)</td>
+            </tr>
+            <tr>
+              <td>Documentation & support</td>
+              <td>Procédures utilisateurs / dépannage</td>
+              <td>Guide PDF / captures</td>
+              <td>GLPI (si utilisé), procédures</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Preuves (conseils)</h2>
+      <ul class="checklist">
+        <li>1 preuve = 1 phrase d’explication (ce que ça prouve)</li>
+        <li>Floute données sensibles (nom entreprise, IP publiques, identifiants)</li>
+        <li>Nomme tes fichiers proprement : <code>gpo_verrouillage.png</code>, <code>schema_vlan.pdf</code></li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <a class="muted" href="index.html">← Retour accueil</a>
+    </footer>
+  </main>
+</body>
+</html>
 
