@@ -1,71 +1,238 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio – BTS SIO SISR</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="topbar">
-    <div class="container">
-      <div class="brand">
-        <div class="logo">SISR</div>
-        <div>
-          <div class="brand-title">Portfolio – BTS SIO SISR</div>
-          <div class="brand-subtitle">Nom Prénom • Administrateur systèmes & réseaux (objectif)</div>
-        </div>
-      </div>
+:root {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --text: #1e293b;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
 
-      <nav class="nav">
-        <a class="active" href="index.html">Accueil</a>
-        <a href="projets.html">Projets</a>
-        <a href="competences.html">Compétences</a>
-        <a href="veille.html">Veille</a>
-      </nav>
-    </div>
-  </header>
+* {
+  box-sizing: border-box;
+}
 
-  <main class="container">
-    <section class="card">
-      <h1>Bienvenue</h1>
-      <p>
-        Ce portfolio présente mes réalisations en <strong>BTS SIO option SISR</strong> :
-        administration systèmes, réseaux, sécurité, support et documentation.
-      </p>
-      <div class="grid2">
-        <div class="pill">
-          <strong>Contact</strong><br />
-          Email : <span class="muted">prenom.nom@email.com</span><br />
-          LinkedIn : <span class="muted">à compléter</span><br />
-          GitHub : <span class="muted">https://tonpseudo.github.io</span>
-        </div>
-        <div class="pill">
-          <strong>Technos</strong><br />
-          Windows Server / Linux • AD/DNS/DHCP • VLAN • VPN • Firewall • Virtualisation • Supervision
-        </div>
-      </div>
-    </section>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-    <section class="card">
-      <h2>À propos</h2>
-      <p>
-        Je suis étudiant(e) en BTS SIO SISR. Mon objectif est de travailler comme
-        technicien(ne) / administrateur(trice) systèmes et réseaux.
-      </p>
-      <ul class="checklist">
-        <li>Administration et maintenance d’infrastructures</li>
-        <li>Déploiement de services (AD, DNS, DHCP, fichiers, etc.)</li>
-        <li>Sécurisation : droits, segmentation, bonnes pratiques</li>
-        <li>Documentation : procédures, schémas, comptes-rendus</li>
-      </ul>
-    </section>
+/* ===== CONTAINER ===== */
+.container {
+  width: min(1100px, 92vw);
+  margin: auto;
+}
 
-    <section class="card">
-      <h2>Accès rapide</h2>
-      <div class="grid3">
-        <a class="tile" href="projets.html">
-          <h3>Projets</h3>
-          <p>Stages + TP : contexte, actions, résultats, preuves.</p>
-        </a>
-        <a class="ti
+/* ===== HEADER / NAV ===== */
+.topbar {
+  background: var(--primary);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  background: white;
+  color: var(--primary);
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.brand-title {
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* ===== NAV ===== */
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav a.active {
+  background: white;
+  color: var(--primary);
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 30px 0 50px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  margin-bottom: 22px;
+  border-left: 5px solid var(--primary);
+}
+
+.card h1,
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+/* ===== TEXT ===== */
+.muted {
+  color: var(--muted);
+}
+
+/* ===== LAYOUT ===== */
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* ===== TAGS ===== */
+.tag {
+  display: inline-block;
+  background: var(--bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-right: 6px;
+}
+
+/* ===== LISTS ===== */
+.checklist {
+  padding-left: 20px;
+}
+
+.checklist li {
+  margin-bottom: 6px;
+}
+
+/* ===== TABLE ===== */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: var(--bg);
+  font-weight: 700;
+}
+
+/* ===== IMAGES / PREUVES ===== */
+.proofs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+
+figure {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+figcaption {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ===== NOTES ===== */
+.note {
+  margin-top: 12px;
+  padding: 12px;
+  background: #eff6ff;
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ===== CODE ===== */
+code {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-family: Consolas, monospace;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .grid2,
+  .grid3,
+  .proofs {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
