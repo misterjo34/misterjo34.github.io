@@ -77,4 +77,105 @@
         <li>Tests : jonction poste au domaine, application des stratégies</li>
       </ol>
 
-      <h3>Preuves</
+      <h3>Preuves</h3>
+      <p class="muted">Ajoute tes captures dans <code>/images</code> puis référence-les :</p>
+      <div class="proofs">
+        <figure>
+          <img src="images/ad-ou.png" alt="Exemple OU Active Directory (remplace par ta capture)" />
+          <figcaption>OU / groupes / utilisateurs (exemple)</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gpo.png" alt="Exemple GPO (remplace par ta capture)" />
+          <figcaption>GPO appliquées (exemple)</figcaption>
+        </figure>
+      </div>
+
+      <div class="note">
+        <strong>Sécurité :</strong> pas de mots de passe, floute noms/IP/entreprise si nécessaire.
+      </div>
+    </section>
+
+    <!-- PROJET 2 -->
+    <section class="card">
+      <div class="card-head">
+        <h2>Projet 2 — Segmentation réseau VLAN + routage</h2>
+        <span class="tag">Réseau</span>
+        <span class="tag">VLAN</span>
+        <span class="tag">ACL</span>
+      </div>
+
+      <div class="grid2">
+        <div>
+          <h3>Contexte</h3>
+          <p>TP : séparation des services (admin, utilisateurs, invités) pour limiter les risques.</p>
+
+          <h3>Objectif</h3>
+          <ul>
+            <li>Créer plusieurs VLAN</li>
+            <li>Mettre en place l’inter-VLAN routing</li>
+            <li>Restreindre les flux (ACL / règles firewall)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Technos</h3>
+          <ul>
+            <li>Switch manageable • Router / L3</li>
+            <li>DHCP • Plan d’adressage</li>
+          </ul>
+
+          <h3>Résultat</h3>
+          <p>Réseau segmenté, accès maîtrisés entre VLAN.</p>
+        </div>
+      </div>
+
+      <h3>Preuves</h3>
+      <div class="proofs">
+        <figure>
+          <img src="images/schema-reseau.png" alt="Schéma réseau (remplace par ton schéma)" />
+          <figcaption>Schéma réseau (exemple)</figcaption>
+        </figure>
+        <figure>
+          <img src="images/vlan-config.png" alt="Configuration VLAN (remplace par ta capture)" />
+          <figcaption>Config VLAN / trunk (exemple)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROJET 3 -->
+    <section class="card">
+      <div class="card-head">
+        <h2>Projet 3 — Sauvegarde et supervision</h2>
+        <span class="tag">Exploitation</span>
+        <span class="tag">Sauvegarde</span>
+        <span class="tag">Monitoring</span>
+      </div>
+
+      <div class="grid2">
+        <div>
+          <h3>Objectif</h3>
+          <ul>
+            <li>Automatiser des sauvegardes</li>
+            <li>Superviser services/ressources</li>
+            <li>Documenter la procédure de restauration</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Exemples d’outils</h3>
+          <ul>
+            <li>Scripts PowerShell/Bash</li>
+            <li>Supervision (Zabbix / Centreon / Grafana…)</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="muted">
+        Ajoute ici tes scripts (sans secrets) et captures de dashboards / alertes.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <a class="muted" href="index.html">← Retour accueil</a>
+    </footer>
+  </main>
+</body>
+</html>
