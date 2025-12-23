@@ -1,238 +1,131 @@
-:root {
-  --bg: #f1f5f9;
-  --card: #ffffff;
-  --primary: #2563eb;
-  --primary-dark: #1e40af;
-  --text: #1e293b;
-  --muted: #475569;
-  --border: #e2e8f0;
-  --radius: 12px;
-  --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-}
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio BTS SIO - [Prénom Nom]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-}
+<header class="topbar">
+  <div class="container navwrap">
+    <a class="brand" href="index.html">
+      <span class="logo" aria-hidden="true"></span>
+      <span>Portfolio BTS SIO</span>
+    </a>
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
+    <nav class="nav">
+      <a class="active" href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="veille.html">Veille</a>
+    </nav>
+  </div>
+</header>
 
-/* ===== CONTAINER ===== */
-.container {
-  width: min(1100px, 92vw);
-  margin: auto;
-}
+<main class="container">
+  <section class="hero">
+    <div class="heroGrid">
+      <div class="card pad">
+        <span class="kicker">🎓 BTS SIO — Option <strong>[SLAM/SISR]</strong></span>
+        <h1>[Prénom Nom] — Développeur / Admin système en formation</h1>
+        <p>
+          Je suis étudiant en BTS SIO option <strong>[SLAM/SISR]</strong>. Ici, tu trouveras mes compétences,
+          mes projets, ma veille technologique et mes expériences (stages/alternance).
+        </p>
 
-/* ===== HEADER / NAV ===== */
-.topbar {
-  background: var(--primary);
-  color: white;
-  box-shadow: var(--shadow);
-}
+        <div class="badges">
+          <span class="badge purple">HTML / CSS</span>
+          <span class="badge">[PHP / Java / Python]</span>
+          <span class="badge ok">Git / GitHub</span>
+          <span class="badge">[SQL / MySQL]</span>
+        </div>
 
-.topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-  gap: 20px;
-}
+        <div class="actions">
+          <a class="btn primary" href="projets.html">Voir mes projets</a>
+          <a class="btn" href="competences.html">Mes compétences</a>
+          <a class="btn" href="veille.html">Ma veille</a>
+        </div>
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+        <hr>
 
-.logo {
-  background: white;
-  color: var(--primary);
-  font-weight: 800;
-  border-radius: 10px;
-  padding: 10px 12px;
-}
+        <div class="note">
+          <strong>Objectif :</strong> [Stage / Alternance] en tant que [développeur / technicien support / admin réseau]
+          à partir de [mois/année].
+        </div>
+      </div>
 
-.brand-title {
-  font-weight: 700;
-}
+      <aside class="card pad">
+        <h2>Infos rapides</h2>
+        <div class="sideList">
+          <div class="item">
+            <strong>📍 Localisation</strong>
+            <small>[Ville, France]</small>
+          </div>
+          <div class="item">
+            <strong>📧 Email</strong>
+            <small><a class="link" href="mailto:[tonmail@exemple.com]">[tonmail@exemple.com]</a></small>
+          </div>
+          <div class="item">
+            <strong>🔗 GitHub</strong>
+            <small><a class="link" href="https://github.com/[tonPseudo]" target="_blank" rel="noopener">github.com/[tonPseudo]</a></small>
+          </div>
+          <div class="item">
+            <strong>🧩 Points forts</strong>
+            <small>[Autonomie] • [Rigueur] • [Esprit d’équipe]</small>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
 
-.brand-subtitle {
-  font-size: 0.9rem;
-  opacity: 0.9;
-}
+  <section class="section">
+    <div class="grid3">
+      <div class="card pad">
+        <div class="cardTitle">
+          <h3>Compétences BTS</h3>
+          <span class="meta">Référentiel</span>
+        </div>
+        <p>Une page claire avec mes compétences et des exemples associés à mes projets.</p>
+        <a class="link" href="competences.html">Ouvrir →</a>
+      </div>
 
-/* ===== NAV ===== */
-.nav a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-weight: 500;
-}
+      <div class="card pad">
+        <div class="cardTitle">
+          <h3>Projets</h3>
+          <span class="meta">École & perso</span>
+        </div>
+        <p>Des projets présentés comme au jury : contexte, technos, missions, compétences.</p>
+        <a class="link" href="projets.html">Ouvrir →</a>
+      </div>
 
-.nav a:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
+      <div class="card pad">
+        <div class="cardTitle">
+          <h3>Veille technologique</h3>
+          <span class="meta">Articles & synthèses</span>
+        </div>
+        <p>Ma veille : sources, articles, résumés, et ce que j’en retiens.</p>
+        <a class="link" href="veille.html">Ouvrir →</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-.nav a.active {
-  background: white;
-  color: var(--primary);
-}
+<footer class="footer">
+  <div class="container footerRow">
+    <div>© <span id="year"></span> — [Prénom Nom] • BTS SIO [SLAM/SISR]</div>
+    <div>
+      <a href="mailto:[tonmail@exemple.com]">Email</a> •
+      <a href="https://github.com/[tonPseudo]" target="_blank" rel="noopener">GitHub</a> •
+      <a href="[lien-linkedin]" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
 
-/* ===== MAIN ===== */
-main {
-  padding: 30px 0 50px;
-}
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-/* ===== CARDS ===== */
-.card {
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 22px;
-  margin-bottom: 22px;
-  border-left: 5px solid var(--primary);
-}
-
-.card h1,
-.card h2,
-.card h3 {
-  margin-top: 0;
-}
-
-/* ===== TEXT ===== */
-.muted {
-  color: var(--muted);
-}
-
-/* ===== LAYOUT ===== */
-.grid2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
-
-.grid3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-/* ===== TAGS ===== */
-.tag {
-  display: inline-block;
-  background: var(--bg);
-  color: var(--primary);
-  border: 1px solid var(--border);
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  margin-right: 6px;
-}
-
-/* ===== LISTS ===== */
-.checklist {
-  padding-left: 20px;
-}
-
-.checklist li {
-  margin-bottom: 6px;
-}
-
-/* ===== TABLE ===== */
-.table-wrap {
-  overflow-x: auto;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 720px;
-}
-
-th,
-td {
-  padding: 12px;
-  border-bottom: 1px solid var(--border);
-  text-align: left;
-}
-
-th {
-  background: var(--bg);
-  font-weight: 700;
-}
-
-/* ===== IMAGES / PREUVES ===== */
-.proofs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-top: 12px;
-}
-
-figure {
-  background: white;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
-
-figure img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-figcaption {
-  padding: 10px;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-/* ===== NOTES ===== */
-.note {
-  margin-top: 12px;
-  padding: 12px;
-  background: #eff6ff;
-  border-left: 4px solid var(--primary);
-  border-radius: 8px;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-/* ===== CODE ===== */
-code {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  padding: 3px 6px;
-  border-radius: 6px;
-  font-family: Consolas, monospace;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-  .grid2,
-  .grid3,
-  .proofs {
-    grid-template-columns: 1fr;
-  }
-
-  .topbar .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+</body>
+</html>
