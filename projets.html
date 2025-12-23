@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Projets</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets – Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">SISR</div>
+        <div>
+          <div class="brand-title">Projets</div>
+          <div class="brand-subtitle">Stages & TP • preuves • documentation</div>
+        </div>
+      </div>
 
-<nav>
-  <a href="index.html">Accueil</a>
-  <a href="projets.html">Projets</a>
-  <a href="competences.html">Compétences</a>
-  <a href="veille.html">Veille</a>
-</nav>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a class="active" href="projets.html">Projets</a>
+        <a href="competences.html">Compétences</a>
+        <a href="veille.html">Veille</a>
+      </nav>
+    </div>
+  </header>
 
-<section>
-  <h1>Projets et stages</h1>
-  <p>Projets réalisés en formation et en entreprise.</p>
-</section>
+  <main class="container">
+    <section class="card">
+      <h1>Projets et réalisations</h1>
+      <p class="muted">
+        Conseil BTS : pour chaque projet, indique <strong>contexte</strong>, <strong>objectif</strong>,
+        <strong>ce que tu as fait</strong>, <strong>technos</strong>, <strong>sécurité</strong>,
+        et <strong>preuves</strong> (captures, schémas, configs).
+      </p>
+    </section>
 
-</body>
-</html>
+    <!-- PROJET 1 -->
+    <section class="card">
+      <div class="card-head">
+        <h2>Projet 1 — Mise en place d’un Active Directory</h2>
+        <span class="tag">Système</span>
+        <span class="tag">AD / DNS / GPO</span>
+      </div>
 
+      <div class="grid2">
+        <div>
+          <h3>Contexte</h3>
+          <p>TP / stage : déploiement d’un domaine pour gérer utilisateurs et postes.</p>
+
+          <h3>Objectif</h3>
+          <ul>
+            <li>Créer un domaine (ex : <code>entreprise.local</code>)</li>
+            <li>Structurer OU / groupes / utilisateurs</li>
+            <li>Appliquer des règles via GPO</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Technos</h3>
+          <ul>
+            <li>Windows Server • AD DS • DNS</li>
+            <li>GPO • Partages • NTFS</li>
+          </ul>
+
+          <h3>Résultat</h3>
+          <p>Domaine opérationnel, comptes et politiques appliquées.</p>
+        </div>
+      </div>
+
+      <h3>Ce que j’ai fait</h3>
+      <ol>
+        <li>Installation Windows Server et rôles AD DS/DNS</li>
+        <li>Promotion en contrôleur de domaine</li>
+        <li>Création OU (Users/Computers), groupes, utilisateurs</li>
+        <li>Création GPO (verrouillage, mappage lecteur, restrictions)</li>
+        <li>Tests : jonction poste au domaine, application des stratégies</li>
+      </ol>
+
+      <h3>Preuves</
